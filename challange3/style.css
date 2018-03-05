@@ -1,0 +1,15 @@
+:root {
+	--spacing: 10px;
+	--blur: 5px;
+	--color: #ff0000;
+}
+
+.colored {
+	color: var(--color);
+}
+
+.image-container {
+	padding: var(--spacing);
+	background-color: var(--color);
+	filter: blur(var(--blur));
+}

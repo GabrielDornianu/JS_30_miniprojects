@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Hello world</title>
+</head>
+<body>
+
+<button id='take-photo'>Take photo</button>
+
+<div class="rgb">
+    <label for="rmin">Red Min:</label>
+    <input type="range" min=0 max=255 name="rmin">
+    <label for="rmax">Red Max:</label>
+    <input type="range" min=0 max=255 name="rmax">
+
+    <br>
+
+    <label for="gmin">Green Min:</label>
+    <input type="range" min=0 max=255 name="gmin">
+    <label for="gmax">Green Max:</label>
+    <input type="range" min=0 max=255 name="gmax">
+
+    <br>
+
+    <label for="bmin">Blue Min:</label>
+    <input type="range" min=0 max=255 name="bmin">
+    <label for="bmax">Blue Max:</label>
+    <input type="range" min=0 max=255 name="bmax">
+</div>
+  
+<video class="player"></video>
+<div class="strip">
+<canvas style="border: 2px solid black;" height="400" width="400" class="photo"></canvas>
+<audio class="snap" src="shutter.mp3" type="audio/mp3" hidden></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

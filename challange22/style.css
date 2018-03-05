@@ -1,0 +1,10 @@
+.highlight {
+	transition: all 0.2s linear;
+	background-color: #39f;
+	position: absolute;
+	z-index: -1;
+	display: block;
+	border-radius: 20px;
+	top: 0;
+	left: 0;
+}

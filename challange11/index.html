@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>HTML5 video player</title>
+</head>
+<body>
+
+<div class="player">
+	<video autoplay class="viewer">
+		<source src="videoplayback.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	<div class="player-controls">
+		<input type="range" class="progress-bar" min="1" max="100" step="1">
+		<p class="toggle">></p>
+		<input type="range" class="volume-control" min="0" max="10" step="1">
+		<button class="forward-5">5s >></button>
+		<button class="backward-5"><< 5s</button>
+		<button class="replay">Replay</button>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
